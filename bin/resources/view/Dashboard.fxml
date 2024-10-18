@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+    <padding>
+        <Insets left="-20.0" right="-20.0" />
+    </padding>
+   <center>
+      <VBox fx:id="contentArea" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="20.0" />
+         </BorderPane.margin>
+         <children>
+            <Label prefHeight="26.0" prefWidth="298.0" text="Tableau de bord">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="146.0" prefWidth="1060.0" spacing="30.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../CSS/application.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="240.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="88.0" text="Adhérents" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="50.0" prefWidth="73.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_user_account_50px_4.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label fx:id="adherentsNumber" prefHeight="96.0" prefWidth="244.0" text="9999" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="240.0" styleClass="card2" stylesheets="@../CSS/application.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="240.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="88.0" text="Ressources" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="50.0" prefWidth="73.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_book_50px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label fx:id="BooksNumber" prefHeight="96.0" prefWidth="244.0" text="9999" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane prefHeight="33.0" prefWidth="60.0" />
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons8_book_and_pencil_30px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="33.0" prefWidth="10.0" />
+                                    <Label fx:id="books" prefHeight="38.0" prefWidth="40.0" text="99" textFill="WHITE">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons8_music_record_30px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="33.0" prefWidth="10.0" />
+                                    <Label fx:id="cds" prefHeight="38.0" prefWidth="40.0" text="99" textFill="WHITE">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons8_dvd_logo_30px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="33.0" prefWidth="10.0" />
+                                    <Label fx:id="dvds" prefHeight="38.0" prefWidth="40.0" text="99" textFill="WHITE">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="250.0" layoutY="10.0" prefHeight="200.0" prefWidth="240.0" styleClass="card4" stylesheets="@../CSS/application.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="240.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="88.0" text="Emprunts" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="50.0" prefWidth="73.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_knowledge_sharing_50px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label fx:id="borrowsNumber" prefHeight="96.0" prefWidth="244.0" text="9999" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="490.0" layoutY="10.0" prefHeight="200.0" prefWidth="240.0" styleClass="card3" stylesheets="@../CSS/application.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="240.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="88.0" text="Sanctions" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="50.0" prefWidth="73.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_error_50px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label fx:id="sanctionsNumber" prefHeight="96.0" prefWidth="244.0" text="9999" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label layoutX="30.0" layoutY="278.0" prefHeight="26.0" prefWidth="298.0" text="Livres récemment ajoutées">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="388.0" prefWidth="1060.0" styleClass="transparent-Background" stylesheets="@../CSS/application.css" VBox.vgrow="ALWAYS">
+               <content>
+                  <GridPane fx:id="bookContainer" prefHeight="0.0" prefWidth="0.0">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

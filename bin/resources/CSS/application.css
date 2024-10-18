@@ -1,0 +1,62 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.white-background {
+    -fx-background-color: white;
+}
+
+.transparent-Background {
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.round-layout {
+    -fx-border-radius: 50;
+	-fx-background-radius: 50;
+    -fx-border-color: #d7d7d7;
+}
+
+.round-buttons {
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-border-color: #d7d7d7;
+}
+
+.selected {
+	-fx-background-color: #f3f3f3;
+}
+
+.mouse-mouved: hover {
+	-fx-background-color: #e4e4e4;
+}
+
+.shadow {
+	-fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 10);
+}
+/*
+.text-field {
+	-fx-background-color : rgba(0,0,0,0);
+	-fx-border-width : 0 0 1 0;
+	-fx-border-color : #000;
+}*/
+
+.mouseEnteredRed: hover {
+	-fx-background-color: #000;
+}
+
+.card {
+	-fx-background-color: linear-gradient(to left, #FBAB7E, #F7CE68);
+	-fx-background-radius: 10;
+}
+
+.card2 {
+	-fx-background-color: linear-gradient(to left, #3EECAC, #74EE86);
+	-fx-background-radius: 10;
+}
+
+.card3 {
+	-fx-background-color: linear-gradient(to left, #FB6161, #FFA0A2);
+	-fx-background-radius: 10;
+}
+
+.card4 {
+	-fx-background-color: linear-gradient(to left, #8BC6EC, #9599E2);
+	-fx-background-radius: 10;
+}

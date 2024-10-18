@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CDsController">
+    <padding>
+        <Insets left="-20.0" right="-20.0" />
+    </padding>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="1080.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="20.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="32.0" prefWidth="962.0">
+               <children>
+                  <Pane prefHeight="32.0" prefWidth="637.0" />
+                      <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="27.0" prefWidth="397.0" styleClass="round-layout" stylesheets="@../CSS/application.css">
+                          <children>
+                              <TextField fx:id="keywordTextField" prefHeight="25.0" prefWidth="351.0" promptText="Rechercher" styleClass="transparent-Background" stylesheets="@../CSS/application.css" />
+                        <Button fx:id="searchBtn" mnemonicParsing="false" onMouseClicked="#Search" styleClass="transparent-Background" stylesheets="@../CSS/application.css">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_search_20px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                          </children>
+                      </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="1060.0">
+               <children>
+                  <Label prefHeight="66.0" prefWidth="961.0" text="Les CD Audio">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onMouseClicked="#AddCD" prefHeight="36.0" prefWidth="40.0" styleClass="transparent-Background" stylesheets="@../CSS/application.css">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_add_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="485.0" prefWidth="1040.0" styleClass="transparent-Background" stylesheets="@../CSS/application.css" VBox.vgrow="ALWAYS">
+               <content>
+                  <GridPane fx:id="cdsContainer" prefHeight="0.0" prefWidth="0.0">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+            <Pane prefHeight="64.0" prefWidth="1060.0" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
